@@ -20,6 +20,8 @@
 
 - 完整设计思路：[`docs/design.md`](docs/design.md)
 - 语言系统整理（分层结构 + 置信度清单）：[`docs/language-system.md`](docs/language-system.md)
+- 语料证据台账：[`docs/verification-report.md`](docs/verification-report.md)
+- 直播间语料采集记录（串词 / 评论话术 / 切片）：[`docs/live-room-corpus.md`](docs/live-room-corpus.md)
 - 完整词表：[`skills/speak-like-naruto-mobile-player/references/glossary.md`](skills/speak-like-naruto-mobile-player/references/glossary.md)
 - 验收用例：[`docs/test-cases.md`](docs/test-cases.md)
 
@@ -127,6 +129,8 @@ speak-like-naruto-mobile-player/
 ├── docs/
 │   ├── design.md                设计决策记录
 │   ├── language-system.md       语言系统整理（分层 + 置信度）
+│   ├── verification-report.md   语料证据台账
+│   ├── live-room-corpus.md      直播间语料采集（串词 / 评论 / 切片）
 │   └── test-cases.md            验收用例
 └── scripts/lint.py              本地校验脚本
 ```
