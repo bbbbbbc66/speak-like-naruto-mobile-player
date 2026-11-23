@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python（lint 脚本用）
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 本地素材，不入库
+*.db
+*.sqlite
+*.sqlite3
+raw/
+private/
