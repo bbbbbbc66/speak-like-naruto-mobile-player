@@ -4,6 +4,8 @@
 >
 > **本报告不改动词表状态。** 它只回答一个问题：现有 40 条词表里，哪些证据变强了、哪些变弱了、哪些根本站不住。所有升级 / 降级都列为建议，等圈内人核对后再动手。
 >
+> 注：这是**第二轮当时的状态**。第三轮后词表已扩到 45 条（补入 5 条低争议词），见 [`live-room-corpus.md`](live-room-corpus.md) 第 7 节；本报告的分级口径与结论仍然有效。
+>
 > 相关文档：[`language-system.md`](language-system.md) · [词表](../skills/speak-like-naruto-mobile-player/references/glossary.md) · [`design.md`](design.md)
 
 ---
@@ -35,7 +37,7 @@
 
 ---
 
-## 2. 对现有 40 条词表的影响
+## 2. 对当时 40 条词表的影响
 
 ### 2.1 证据加强，维持 `verified`
 
