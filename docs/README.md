@@ -13,7 +13,7 @@
 | [primary-corpus-analysis.md](primary-corpus-analysis.md) | 9 张一手截图逐字转录，推出「生成语法」 | 想知道 0.4.0 重构的依据 | 现行结论 + 当时过程 |
 | [live-room-corpus.md](live-room-corpus.md) | 直播间逐字语料、串词、评论话术、热门切片清单 | 想查原始语料出处 | 采集记录（第三轮） |
 | [verification-report.md](verification-report.md) | 证据分级 A–F、每个词的来路、忍者外号候选 | 想核对某词凭什么叫 verified | 第二轮快照（分级口径仍有效） |
-| [test-cases.md](test-cases.md) | 6 条验收用例：会不会收、梗密度对不对 | 装完想自己验一遍 | 现行 |
+| [test-cases.md](test-cases.md) | 8 条验收用例：会不会收、梗密度对不对、跨场景迁移 | 装完想自己验一遍 | 现行 |
 | [梗词表（人读版）](../skills/speak-like-naruto-mobile-player/references/glossary.md) | 全量词条 + 生成语法 | 查某一个词 / 某一条规则 | 现行（唯一真源的人读镜像） |
 | [SKILL.md](../skills/speak-like-naruto-mobile-player/SKILL.md) | AI 实际读到的行为规则 | 想改说话行为 | 现行（给 AI 读） |
 
@@ -32,4 +32,4 @@
 
 ## 版本现状
 
-**0.4.2** / `schema 1.0 / generative`：49 条词条（verified 42 / pending 7）、6 条构式、15 个雷霆词根、24 个「场景 → 说法」功能位。版本怎么演化、移除了什么、为什么，折叠在 [梗词表的「版本变更记录」](../skills/speak-like-naruto-mobile-player/references/glossary.md#版本变更记录)。
+**0.4.2** / `schema 1.0 / generative`：49 条词条（verified 42 / pending 7）、6 条构式、15 个雷霆词根、24 个「场景 → 说法」功能位。版本怎么演化、移除了什么、为什么，折叠在 [梗词表的「版本变更记录」](../skills/speak-like-naruto-mobile-player/references/glossary.md#版本变更记录)。此外 `SKILL.md` 的行为层做过一次密度放宽与跨场景迁移（闲聊每条最多 1 个梗、覆盖更多日常场合），**数据层未随之改动**，取舍见 [`design.md`](design.md) 第 6 节。

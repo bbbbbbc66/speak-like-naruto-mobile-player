@@ -23,11 +23,15 @@
 >
 > **AI**：断了。
 
+> **你**：上班迟到十分钟，还被领导撞见，尴尬死了
+>
+> **AI**：卡了，出门晚了。下次早点呗
+
 > **你**：帮我写个请假条，明天上午要去医院
 >
 > **AI**：好，把时间、事由和抬头给我，我给你写。请假条里一个梗都不会有。
 
-三组合起来才是这个 Skill 的重点：**会玩，也会收**。
+四组合起来才是这个 Skill 的重点：**闲聊里梗贴得上去，正事上收得回来**。
 
 ---
 
@@ -42,7 +46,7 @@
 | | 做法 | 为什么 |
 | --- | --- | --- |
 | **生成语法** | 收 15 个词根 + 6 条构式 + 24 个「场景 → 说法」，而不是把所有词串列成词库 | 词根可以任意组合、顺序不限，合法性靠顺口押韵不靠词典。逐条登记等于把一门语法记成单词表 |
-| **密度控制** | 三条回复最多一个梗 | 塞满梗的回复一眼假，稀疏才像人 |
+| **密度控制** | 闲聊每条最多 1 个梗、不叠不硬凑；正事 0 梗 | 允许连着带，但一条里塞两个就成了演小品 |
 | **会收** | 正事 / 情绪不对时一个梗都不带 | 一个只会玩不会收的风格 Skill，装上就是灾难 |
 
 完整取舍见 [`docs/design.md`](docs/design.md)。
@@ -98,6 +102,8 @@ cp -r skills/speak-like-naruto-mobile-player ~/.workbuddy/skills/
 - 火影手游：决斗场、上分、抽卡、忍具、通灵、阵容强度
 - 看海直播：主播操作、弹幕、连麦
 - 明显的闲聊、吐槽、发疯、分享对局
+- **不局限于游戏**：看比赛 / 观赛吐槽、群聊起哄、日常小失误、晒战绩晒抽卡、吐槽离谱安排、朋友互相调侃
+- 判断标准不是话题，是**「这段对话是不是在找乐子」**：找乐子就切过来，解决问题就正常说
 
 ### 手动触发
 
@@ -165,7 +171,7 @@ L2  词缀构式  臭 / 骚 + 动词 → 臭a、骚顶、臭砍
 | 你想… | 看这份 |
 | --- | --- |
 | **装来用** | 本页 [安装](#install) ＋ [`docs/test-cases.md`](docs/test-cases.md)（自己验收） |
-| **看 AI 到底会怎么说话** | [`SKILL.md`](skills/speak-like-naruto-mobile-player/SKILL.md)（这是给 AI 读的主文件）＋ [10 组对话示例](skills/speak-like-naruto-mobile-player/references/examples.md) |
+| **看 AI 到底会怎么说话** | [`SKILL.md`](skills/speak-like-naruto-mobile-player/SKILL.md)（这是给 AI 读的主文件）＋ [12 组对话示例](skills/speak-like-naruto-mobile-player/references/examples.md) |
 | **查一个词 / 一条规则** | [梗词表（人读版）](skills/speak-like-naruto-mobile-player/references/glossary.md)，字段与 [机器读版](skills/speak-like-naruto-mobile-player/data/glossary.json) 一一对应 |
 | **搞懂为什么这么设计** | [`docs/design.md`](docs/design.md)（10 条取舍）＋ [`docs/language-system.md`](docs/language-system.md)（分层结构、置信度、社会学成因） |
 | **查证据、看考据过程** | [`docs/verification-report.md`](docs/verification-report.md)（证据分级）＋ [`docs/live-room-corpus.md`](docs/live-room-corpus.md)（直播间逐字语料）＋ [`docs/primary-corpus-analysis.md`](docs/primary-corpus-analysis.md)（9 张一手截图） |
@@ -187,7 +193,7 @@ speak-like-naruto-mobile-player/
 │   ├── SKILL.md                 主文件，唯一入口（AI 读）
 │   ├── references/
 │   │   ├── glossary.md          梗词表 + 生成语法（人读）
-│   │   └── examples.md          10 组对话示例
+│   │   └── examples.md          12 组对话示例
 │   └── data/
 │       └── glossary.json        唯一真源（机器读，schema 1.0）
 ├── docs/
@@ -217,6 +223,8 @@ speak-like-naruto-mobile-player/
 - **pending**：只在弹幕、帖子里出现过，没找到明确解释，或只有二手转述
 
 `pending` 不是没收够，是**不敢编**。**加进来和算核实是两件事**——含义讲不清就先挂着，别硬造释义污染整张表。知道某个 pending 怎么用的，欢迎提 PR。
+
+> **行为层另有一次调优，数据层没动**：`SKILL.md` 的密度从「三条最多一条」放宽为「闲聊每条最多 1 个、可连着带、一条不叠两个」，并把现有梗迁移到日常场合；正事 0 梗不变。取舍见 [`docs/design.md`](docs/design.md) 第 6 节。
 
 ---
 
