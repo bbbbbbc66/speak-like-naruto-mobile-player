@@ -93,7 +93,7 @@ cp -r speak-like-naruto-mobile-player/skills/speak-like-naruto-mobile-player ~/.
 
 ## 有哪些梗
 
-12 个核心，够用。**这套话是生成语法，不是词库**：词根可以任意组合，构式 C1–C6 生成具体说法。全量 55 条词条 + 6 条构式 + 15 个词根 + 24 个「场景 → 说法」功能位见 [glossary.md](skills/speak-like-naruto-mobile-player/references/glossary.md)。
+12 个核心，够用。**这套话是生成语法，不是词库**：词根可以任意组合，构式 C1–C6 生成具体说法。全量 49 条词条 + 6 条构式 + 15 个词根 + 24 个「场景 → 说法」功能位见 [glossary.md](skills/speak-like-naruto-mobile-player/references/glossary.md)。
 
 | 梗 | 意思 | 例句 |
 | --- | --- | --- |
@@ -143,9 +143,9 @@ speak-like-naruto-mobile-player/
 
 ## 关于词表
 
-**0.4.0 起这不是词库，是生成语法**：词根池 15 个、构式 6 条、场景功能位 24 个，加 55 条词条（verified 44 / pending 11）。机器读版 `data/glossary.json` 是唯一真源，`schema` 为 1.0，CI 校验五层同源。
+**0.4.0 起这不是词库，是生成语法**：词根池 15 个、构式 6 条、场景功能位 24 个，加 49 条词条（verified 42 / pending 7）。机器读版 `data/glossary.json` 是唯一真源，`schema` 为 1.0，CI 校验五层同源。
 
-历史：0.3.1 补 5 条低争议词 → 0.3.2 按圈内裁定补 14 条（已破圈词组、忍者外号 10 条、川祁语录 2 句）→ 0.3.3 人工核对把「青春哥」更正为「红狗」，到 59 条。0.4.0 把四条「我了 X」pending 合并成构式 C1，词条数降到 55，**内容一条没丢**。收词依据见 [直播间语料采集](docs/live-room-corpus.md) 第 7 节，改版依据见 [一手语料分析](docs/primary-corpus-analysis.md)。
+历史：0.3.1 补 5 条低争议词 → 0.3.2 按圈内裁定补 14 条（已破圈词组、忍者外号 10 条、川祁语录 2 句）→ 0.3.3 人工核对把「青春哥」更正为「红狗」，到 59 条。0.4.0 把四条「我了 X」pending 合并成构式 C1，词条数降到 55。0.4.1 按用户裁定移除 6 条，降到 49 条（理由见 [梗词表 0.4.1 小节](skills/speak-like-naruto-mobile-player/references/glossary.md)）。收词依据见 [直播间语料采集](docs/live-room-corpus.md) 第 7 节，改版依据见 [一手语料分析](docs/primary-corpus-analysis.md)。
 
 分层逻辑和每个词的置信度来路，见 [语言系统整理](docs/language-system.md)。简单说：
 
@@ -153,6 +153,8 @@ speak-like-naruto-mobile-player/
 - **pending**：只在弹幕、帖子里出现过，没找到明确解释，或只有二手转述
 
 **为什么还留着 pending**：不是没收够，是**不敢编**。川祁语录两句是圈内点名要加的，但只有公众号二手转述，照规矩挂 `pending` —— **加进来和算核实，是两件事**。原先那组「我了猪 / 刚 / 塞 / 雷」不是被删了，是一手语料证明它们属于同一条构式，收进 C1 了。自己定的规矩，自己先守。
+
+**首页那 12 个核心是「说话时会用的说法」，和词表登记不是一一对应**：0.4.1 起「嘉豪」因非火影圈原生不再登记为词条，但圈内确实仍在用，故保留在核心梗表与 `SKILL.md` 里；「雷刚饭 / 猪咪饭 / oda」同理，作为构式实例与口语写法仍在例句中出现。
 
 看到 `pending` 的词，说明「听说过但还没人讲清楚」。知道怎么用的，欢迎提 PR。
 

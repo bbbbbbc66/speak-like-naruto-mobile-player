@@ -1,9 +1,9 @@
 {
   "schema": "1.0",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "updated": "2026-11-23",
   "model": "generative",
-  "note": "数据模型 v1.0（生成语法）：这套语言不是词库，是语法。roots 是原子，constructions 是生成规则，functions 是场景到说法的映射，pragmatics 是这套语言的存在原因与使用约束，terms 是已核实的具体词条。机器读以本文件为唯一真源，references/glossary.md 与本文件必须同源，CI 校验五层结构。不确定的标 pending，不硬编释义；个人身份信息一律不收。收词与改版依据见 docs/primary-corpus-analysis.md。",
+  "note": "数据模型 v1.0（生成语法）：这套语言不是词库，是语法。roots 是原子，constructions 是生成规则，functions 是场景到说法的映射，pragmatics 是这套语言的存在原因与使用约束，terms 是已核实的具体词条。机器读以本文件为唯一真源，references/glossary.md 与本文件必须同源，CI 校验五层结构。不确定的标 pending，不硬编释义；个人身份信息一律不收。收词与改版依据见 docs/primary-corpus-analysis.md。0.4.1 按用户裁定移除 6 条词条，理由见 references/glossary.md 的 0.4.1 小节。",
 
   "roots": {
     "thunder": ["霆", "雷", "塞", "钢", "爆", "珠", "蛋", "骚", "缸", "猪", "裂", "球", "阴", "亏", "替"],
@@ -55,7 +55,7 @@
       "examples": ["雷霆猪"],
       "merged_terms": [],
       "status": "verified",
-      "source": "一手语料图 2「雷霆猪」（A 类）；词条「雷霆嘉豪」沿用此构式，见词条表"
+      "source": "一手语料图 2「雷霆猪」（A 类）"
     },
     {
       "id": "C5",
@@ -72,10 +72,10 @@
       "name": "无义形容词 + 名词",
       "pattern": "雷 / 刚 / 猪咪等作无意义形容词，修饰任意名词",
       "function": "纯装饰，图个味道，没有实义，不要试图编出含义",
-      "examples": ["雷刚饭", "猪咪饭"],
+      "examples": ["雷饭", "猪咪思路"],
       "merged_terms": [],
       "status": "pending",
-      "source": "抽象自词表原有「雷刚饭」「猪咪饭」两条 pending 词条；具体词形至今无一手语料，构式状态随词条标 pending"
+      "source": "「雷」「刚」「猪咪」等无义形容词作定语修饰名词；具体词形至今无一手语料，维持 pending。0.4.1 起固定搭配不再单独立词条，只保留为本构式实例"
     }
   ],
 
@@ -124,15 +124,6 @@
 
   "terms": [
     {
-      "term": "嘉豪",
-      "pinyin": "jia hao",
-      "meaning": "装腔作势、用力过猛，又菜又爱装；火影圈也指忍者帅、能秀操作，不完全贬义",
-      "usage": "很嘉豪、太嘉豪了、别嘉豪了、非常嘉豪",
-      "example": "很嘉豪，豪意值拉满了",
-      "source": "抖音（2024 年视频标签误打扩散，播放超 152 亿）",
-      "status": "verified"
-    },
-    {
       "term": "串子",
       "pinyin": "chuan zi",
       "meaning": "假装是某群体成员，说夸张极端的话引战、给对方招黑；现在也带调侃意味",
@@ -158,16 +149,6 @@
       "example": "豪到我了兄弟",
       "source": "火影手游玩家圈",
       "status": "verified"
-    },
-    {
-      "term": "雷霆嘉豪",
-      "pinyin": "lei ting jia hao",
-      "meaning": "「嘉豪」的加强说法，套用构式 C4「雷霆 + X」，叠加后表示装到极致",
-      "usage": "雷霆嘉豪、这是雷霆嘉豪",
-      "example": "雷霆嘉豪了属于是",
-      "source": "火影手游玩家圈；构式见 C4（一手语料图 2）",
-      "construction": "C4",
-      "status": "pending"
     },
     {
       "term": "雷（形容词）",
@@ -200,26 +181,6 @@
       "status": "verified"
     },
     {
-      "term": "猪咪饭",
-      "pinyin": "zhu mi fan",
-      "meaning": "构式 C6「无义形容词 + 名词」的玩法，本身没有实际所指",
-      "usage": "吃了个猪咪饭",
-      "example": "今天吃了个猪咪饭",
-      "source": "看海直播间（口传）",
-      "construction": "C6",
-      "status": "pending"
-    },
-    {
-      "term": "雷刚饭",
-      "pinyin": "lei gang fan",
-      "meaning": "构式 C6「无义形容词 + 名词」的玩法，纯图个味道，没有实义",
-      "usage": "吃了个雷刚饭",
-      "example": "今天吃了个雷刚饭",
-      "source": "看海直播间（口传）",
-      "construction": "C6",
-      "status": "pending"
-    },
-    {
       "term": "断了",
       "pinyin": "duan le",
       "meaning": "厉害、牛，用来夸人的操作或战绩；夸得很轻，不能扩写成尬吹。源自「实力断档」：技术水平远超对手形成难以逾越的断档，所以既能夸人也能自夸",
@@ -234,15 +195,6 @@
       "meaning": "万能动词，任何动作都能套上去",
       "usage": "欧打一下、先欧打个饭、欧打起来",
       "example": "先去欧打个饭",
-      "source": "火影手游玩家圈",
-      "status": "verified"
-    },
-    {
-      "term": "oda",
-      "pinyin": "o d a",
-      "meaning": "「欧打」的字母写法，同义，打字快时用",
-      "usage": "先 oda 个饭、oda 起来",
-      "example": "先 oda 个饭再上分",
       "source": "火影手游玩家圈",
       "status": "verified"
     },
@@ -433,15 +385,6 @@
       "usage": "暗部局、打暗部",
       "example": "你是个暗部来了都可能吃超影",
       "source": "火影手游直播间（口传）",
-      "status": "pending"
-    },
-    {
-      "term": "团藏（帽子义）",
-      "pinyin": "tuan zang",
-      "meaning": "扣帽子式的标签，用来指认「带节奏的人」，具体语境待核",
-      "usage": "扣团藏帽子、被扣上团藏帽子",
-      "example": "给一起带节奏的扣上团藏帽子",
-      "source": "233 乐园玩家帖",
       "status": "pending"
     },
     {
