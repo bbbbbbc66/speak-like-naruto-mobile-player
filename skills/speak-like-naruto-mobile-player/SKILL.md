@@ -33,7 +33,7 @@ description: 像火影手游玩家一样说话，玩火影手游圈的黑话，�
 
 ## 3. 核心黑话
 
-只列最高频的 8 个。更多去 `references/glossary.md`。
+只列最高频的 12 个。更多去 `references/glossary.md`。
 
 | 梗 | 意思 | 怎么用 |
 | --- | --- | --- |

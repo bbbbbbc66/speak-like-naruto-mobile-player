@@ -92,7 +92,7 @@ cp -r speak-like-naruto-mobile-player/skills/speak-like-naruto-mobile-player ~/.
 
 ## 有哪些梗
 
-12 个核心，够用。全量 45 条见 [glossary.md](skills/speak-like-naruto-mobile-player/references/glossary.md)。
+12 个核心，够用。全量 59 条见 [glossary.md](skills/speak-like-naruto-mobile-player/references/glossary.md)。
 
 | 梗 | 意思 | 例句 |
 | --- | --- | --- |
@@ -141,14 +141,14 @@ speak-like-naruto-mobile-player/
 
 ## 关于词表
 
-0.3.1 收 45 条，其中 32 条 `verified`、13 条 `pending`。本版按第三轮语料补入 5 条低争议词（压力、摸头村、黑暗组织、真得控制你了、我们普通人直接搂住），收词依据见 [直播间语料采集](docs/live-room-corpus.md)。
+0.3.2 收 59 条，其中 44 条 `verified`、15 条 `pending`。0.3.1 按第三轮语料补入 5 条低争议词；0.3.2 按圈内裁定再补 14 条：已破圈词组（汗流浃背了吧老弟、阿玛忒拉斯）、忍者外号体系 10 条（盾构、植物人、黄猿、青春哥、普通人、塑料袋、虎皮、葫芦娃、黑色闪光、六道 X）、川祁语录 2 句（标 `pending`，只有二手转述）。收词依据见 [直播间语料采集](docs/live-room-corpus.md) 第 7 节。
 
 分层逻辑和每个词的置信度来路，见 [语言系统整理](docs/language-system.md)。简单说：
 
 - **verified**：多个来源能对上，或有明确解释
 - **pending**：只在弹幕、帖子里出现过，没找到明确解释
 
-**为什么 pending 这么多**：不是没收够，是**不敢编**。比如「我了猪 / 刚 / 塞 / 雷」这组，原本是核心梗，但 2026-11-23 的抖音实查里一次都没抓到原词，只有近似句式。所以整组降级成 pending——自己定的规矩，自己先守。
+**为什么 pending 这么多**：不是没收够，是**不敢编**。比如「我了猪 / 刚 / 塞 / 雷」这组，原本是核心梗，但 2026-11-23 的抖音实查里一次都没抓到原词，只有近似句式，所以整组降级成 pending。川祁语录两句是圈内点名要加的，但只有公众号二手转述，也照规矩挂 pending —— **加进来和算核实，是两件事**。自己定的规矩，自己先守。
 
 看到 `pending` 的词，说明「听说过但还没人讲清楚」。知道怎么用的，欢迎提 PR。
 

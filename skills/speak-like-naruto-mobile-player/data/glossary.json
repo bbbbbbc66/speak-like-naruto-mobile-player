@@ -1,7 +1,7 @@
 {
-  "version": "0.3.1",
+  "version": "0.3.2",
   "updated": "2026-11-23",
-  "note": "只收录有出处和释义的词条。不确定的标 pending，不硬编释义。涉及具体个人身份的信息一律不收。「我了猪/刚/塞/雷」因 2026-11-23 实查未获一手语料，降为 pending。0.3.1 按第三轮语料补入 5 条低争议词条，强归属词在 source 字段标注归属，收词依据见 docs/live-room-corpus.md。",
+  "note": "只收录有出处和释义的词条。不确定的标 pending，不硬编释义。涉及具体个人身份的信息一律不收。「我了猪/刚/塞/雷」因 2026-11-23 实查未获一手语料，降为 pending。0.3.1 按第三轮语料补入 5 条低争议词条；0.3.2 按用户裁定补入 14 条：已破圈词组 2 条、忍者外号体系 10 条、川祁语录 2 条（仅二手转述，标 pending）。「盾构」按圈内口述核对指向佩恩·六道「漂泊浪客」，另一说存于 docs。强归属词在 source 字段标注归属，收词依据见 docs/live-room-corpus.md。",
   "terms": [
     {
       "term": "嘉豪",
@@ -406,6 +406,132 @@
       "usage": "我们普通人直接搂住、直接搂住",
       "example": "我们普通人直接搂住",
       "source": "萌娘百科「火影忍者手游/梗与相关用语」（B 级）；强归属久安",
+      "status": "verified"
+    },
+    {
+      "term": "汗流浃背了吧老弟",
+      "pinyin": "han liu jia bei le ba lao di",
+      "meaning": "调侃对面被打得紧张狼狈、出汗了，带点戏谑的关心；「老弟」是 coke 的口头禅体",
+      "usage": "汗流浃背了吧老弟、汗流浃背了吧",
+      "example": "汗流浃背了吧老弟",
+      "source": "coke 直播间（克劳锐长文内嵌抖音评论区与口播，B 级）；已破圈，圈外也通用",
+      "status": "verified"
+    },
+    {
+      "term": "阿玛忒拉斯",
+      "pinyin": "a ma te la si",
+      "meaning": "佐助天照日语台词的空耳，模仿捂眼放天照时用，全网二创的万能整活句",
+      "usage": "阿玛忒拉斯、直接阿玛忒拉斯",
+      "example": "阿玛忒拉斯！",
+      "source": "佐助天照台词空耳，coke 带火（今日头条「火影手游专属梗」B 级）；已破圈",
+      "status": "verified"
+    },
+    {
+      "term": "居里夫人售卖雷元素分子",
+      "pinyin": "ju li fu ren shou mai lei yuan su fen zi",
+      "meaning": "川祁式全随机抽象话术：把不相干的专有名词硬拼成句，给忍者技能 / 秘卷安上离谱名字；具体语境待核",
+      "usage": "整句复用、随口来一句川祁语录",
+      "example": "居里夫人售卖雷元素分子",
+      "source": "川祁直播间（公众号「火影抽象语音大赏」二手转述，E 级；另有「木叶村抽象家」标签级旁证），无一手页面，待核",
+      "status": "pending"
+    },
+    {
+      "term": "阿努比斯布置橡胶跑道",
+      "pinyin": "a nu bi si bu zhi xiang jiao pao dao",
+      "meaning": "同上，川祁式随机抽象话术的又一例，拼贴不相干名词制造荒诞感；具体语境待核",
+      "usage": "整句复用、随口来一句川祁语录",
+      "example": "阿努比斯布置橡胶跑道",
+      "source": "川祁直播间（公众号「火影抽象语音大赏」二手转述，E 级），无一手页面，待核",
+      "status": "pending"
+    },
+    {
+      "term": "盾构",
+      "pinyin": "dun gou",
+      "meaning": "佩恩·六道「漂泊浪客」的外号；饿鬼道开盾（封术吸印）+ 地狱道阎王随时能摁，像盾构机一样苟住磨人。另说指秽土长门，本词表按圈内口述核对采用前者",
+      "usage": "盾构、掏盾构、盾构苟住",
+      "example": "对面掏盾构了，慢慢磨吧",
+      "source": "用户口述核对指定；萌娘百科「佩恩·六道『漂泊浪客』」词条（B 级）；另一说见 docs/verification-report.md 第 3 节",
+      "status": "verified"
+    },
+    {
+      "term": "植物人",
+      "pinyin": "zhi wu ren",
+      "meaning": "秽土柱间的外号；木遁满地长植物，早期笨重容易被骗技能",
+      "usage": "植物人、掏植物人",
+      "example": "植物人开局，木遁铺满场",
+      "source": "今日头条「火影手游专属梗」黑话盘点（B 级）",
+      "status": "verified"
+    },
+    {
+      "term": "黄猿",
+      "pinyin": "huang yuan",
+      "meaning": "九喇嘛鸣人的外号；浑身金光闪闪，技能到处乱飞抓不住",
+      "usage": "黄猿、掏黄猿",
+      "example": "黄猿刚出那会乱 A 都能赢",
+      "source": "今日头条「火影手游专属梗」黑话盘点（B 级）",
+      "status": "verified"
+    },
+    {
+      "term": "青春哥",
+      "pinyin": "qing chun ge",
+      "meaning": "死门凯的外号",
+      "usage": "青春哥、掏青春哥",
+      "example": "青春哥一脚，直接带走",
+      "source": "今日头条黑话盘点（B 级）",
+      "status": "verified"
+    },
+    {
+      "term": "普通人",
+      "pinyin": "pu tong ren",
+      "meaning": "博人传长十郎的外号；原著平平无奇、游戏里机制超模，反差巨大。久安「我们普通人直接搂住」就是从这里来的",
+      "usage": "普通人、掏普通人、普通人直接搂住",
+      "example": "普通人又超模了",
+      "source": "萌娘百科「梗与相关用语」+ 今日头条「火影手游专属梗」（B 级）",
+      "status": "verified"
+    },
+    {
+      "term": "塑料袋",
+      "pinyin": "su liao dai",
+      "meaning": "须佐能乎的统称，不是单一忍者外号；特效像塑料、前后摇巨大容易被打断",
+      "usage": "塑料袋、开塑料袋",
+      "example": "又是塑料袋，前后摇太大了",
+      "source": "docs/verification-report.md 第 3 节（单源；已按台账纠错，不是单一忍者映射）",
+      "status": "verified"
+    },
+    {
+      "term": "虎皮",
+      "pinyin": "hu pi",
+      "meaning": "神秘面具男（带土）的外号；机制简单却极强，人称「天王质检员」",
+      "usage": "虎皮、掏虎皮",
+      "example": "虎皮上手就是天王质检员",
+      "source": "docs/verification-report.md 第 3 节（单源）",
+      "status": "verified"
+    },
+    {
+      "term": "葫芦娃",
+      "pinyin": "hu lu wa",
+      "meaning": "我爱罗的外号，常背葫芦",
+      "usage": "葫芦娃、掏葫芦娃",
+      "example": "葫芦娃又来守家了",
+      "source": "docs/verification-report.md 第 3 节（单源）",
+      "status": "verified"
+    },
+    {
+      "term": "黑色闪光",
+      "pinyin": "hei se shan guang",
+      "meaning": "惠比寿的外号，反差原作「黄色闪光」",
+      "usage": "黑色闪光、木叶的黑色闪光",
+      "example": "木叶的黑色闪光来了",
+      "source": "火影忍者手游官网「摸头村黑话大盘点」（官方）",
+      "status": "verified"
+    },
+    {
+      "term": "六道 X",
+      "pinyin": "liu dao",
+      "meaning": "给强 C 忍冠「六道」的构词法，如六道托斯、六道青、六道樱，表示这忍者强到不像 C 忍",
+      "usage": "六道托斯、六道青、六道樱、六道 X",
+      "example": "这 C 忍直接六道樱了",
+      "source": "火影忍者手游官网「摸头村黑话大盘点」（官方）",
       "status": "verified"
     }
   ]
