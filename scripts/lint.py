@@ -14,6 +14,7 @@
    功能位场景一一对应、15 个词根都在人读版词根池里出现
 6. 所有 Markdown 相对链接不失效
 7. 全仓 JSON 数据里没有疑似手机号
+8. 已移除词形黑名单：仓库任何文本文件出现 6 条移除词条对应的词形即报错，防回退
 
 用法：python3 scripts/lint.py
 """
@@ -37,6 +38,15 @@ REQUIRED_FUNCTION_FIELDS = ["scene", "options", "source"]
 VALID_STATUS = {"verified", "pending"}
 EXPECTED_SCHEMA = "1.0"
 EXPECTED_ROOT_COUNT = 15
+
+# 0.4.1 移除、0.4.2 全仓清除的词形。拆分书写，避免本文件自身被扫描命中。
+BANNED_FORMS = [
+    "嘉" + "豪",
+    "雷" + "刚饭",
+    "猪咪" + "饭",
+    "od" + "a",
+    "团藏（" + "帽子义）",
+]
 
 errors: list[str] = []
 warnings: list[str] = []
@@ -304,6 +314,23 @@ def check_privacy(data: dict) -> None:
         err(f"JSON 数据里疑似出现手机号：{', '.join(holes)}")
 
 
+def check_banned_forms() -> None:
+    """已移除的词形不得出现在仓库任何文本文件中（0.4.2 起，防回退）。
+
+    黑名单用拆分字符串书写，本文件源码里不会出现完整词形，扫描自身不会误报。
+    """
+    exts = {".md", ".json", ".yml", ".yaml", ".html", ".txt"}
+    for path in ROOT.rglob("*"):
+        if not path.is_file() or path.suffix.lower() not in exts:
+            continue
+        if ".git" in path.parts:
+            continue
+        text = path.read_text(encoding="utf-8", errors="ignore")
+        for form in BANNED_FORMS:
+            if form in text:
+                err(f"{path.relative_to(ROOT)} 出现已移除词形「{form}」")
+
+
 def main() -> int:
     check_skill_md()
     data = load_model()
@@ -311,6 +338,7 @@ def main() -> int:
     check_md_consistency(data)
     check_links()
     check_privacy(data)
+    check_banned_forms()
 
     if errors:
         print(f"校验失败，{len(errors)} 个问题：")
@@ -334,6 +362,7 @@ def main() -> int:
           f" · 词根 {len(data.get('roots', {}).get('thunder', []))} 个"
           f" · 功能位 {len(data.get('functions', []))} 个")
     print(f"  SKILL.md {(SKILL_DIR / 'SKILL.md').read_text(encoding='utf-8').count(chr(10)) + 1} 行")
+    print(f"  已移除词形黑名单：{len(BANNED_FORMS)} 项词形（覆盖 6 条移除词条），全仓 0 命中")
     for item in warnings:
         print(f"  ! {item}")
     return 0

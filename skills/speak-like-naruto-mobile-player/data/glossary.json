@@ -1,9 +1,9 @@
 {
   "schema": "1.0",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "updated": "2026-11-23",
   "model": "generative",
-  "note": "数据模型 v1.0（生成语法）：这套语言不是词库，是语法。roots 是原子，constructions 是生成规则，functions 是场景到说法的映射，pragmatics 是这套语言的存在原因与使用约束，terms 是已核实的具体词条。机器读以本文件为唯一真源，references/glossary.md 与本文件必须同源，CI 校验五层结构。不确定的标 pending，不硬编释义；个人身份信息一律不收。收词与改版依据见 docs/primary-corpus-analysis.md。0.4.1 按用户裁定移除 6 条词条，理由见 references/glossary.md 的 0.4.1 小节。",
+  "note": "数据模型 v1.0（生成语法）：这套语言不是词库，是语法。roots 是原子，constructions 是生成规则，functions 是场景到说法的映射，pragmatics 是这套语言的存在原因与使用约束，terms 是已核实的具体词条。机器读以本文件为唯一真源，references/glossary.md 与本文件必须同源，CI 校验五层结构。不确定的标 pending，不硬编释义；个人身份信息一律不收。收词与改版依据见 docs/primary-corpus-analysis.md。0.4.1 按用户裁定移除 6 条词条；0.4.2 起这 6 个词形在全仓库任何文件中均不出现（含 SKILL.md、README、示例与词条释义），由 scripts/lint.py 黑名单校验防回退，理由见 references/glossary.md 的 0.4.1 / 0.4.2 小节。",
 
   "roots": {
     "thunder": ["霆", "雷", "塞", "钢", "爆", "珠", "蛋", "骚", "缸", "猪", "裂", "球", "阴", "亏", "替"],
@@ -135,7 +135,7 @@
     {
       "term": "豪意值",
       "pinyin": "hao yi zhi",
-      "meaning": "把「嘉豪」的装量化成一个数值，借英雄联盟腕豪的设定",
+      "meaning": "把装腔作势的程度量化成一个数值，借英雄联盟腕豪的设定",
       "usage": "豪意值拉满、豪意值超标",
       "example": "豪意值拉满了",
       "source": "火影手游玩家圈",
@@ -155,7 +155,7 @@
       "pinyin": "lei",
       "meaning": "无意义形容词，纯装饰，不要试图给它编实际含义；构式 C6 的实例",
       "usage": "很雷、雷饭、雷的一批",
-      "example": "今天吃了个雷刚饭",
+      "example": "今天吃了个雷饭",
       "source": "看海直播间",
       "construction": "C6",
       "status": "verified"
@@ -164,8 +164,8 @@
       "term": "刚（形容词）",
       "pinyin": "gang",
       "meaning": "无意义形容词，常和「雷」连用，图个味道；构式 C6 的实例",
-      "usage": "很刚、雷刚饭、刚的一批",
-      "example": "今天吃了个雷刚饭",
+      "usage": "很刚、刚的一批",
+      "example": "今天很刚",
       "source": "看海直播间",
       "construction": "C6",
       "status": "verified"
@@ -174,8 +174,8 @@
       "term": "猪咪（形容词）",
       "pinyin": "zhu mi",
       "meaning": "无意义形容词，纯装饰，和「雷」「刚」同类；构式 C6 的实例",
-      "usage": "很猪咪、猪咪思路、猪咪饭",
-      "example": "今天吃了个猪咪饭",
+      "usage": "很猪咪、猪咪思路",
+      "example": "今天很猪咪",
       "source": "看海直播间",
       "construction": "C6",
       "status": "verified"
@@ -363,7 +363,7 @@
     {
       "term": "骨架",
       "pinyin": "gu jia",
-      "meaning": "某忍者或玩法的代称，提它容易被封或被扣帽子",
+      "meaning": "某忍者或玩法的代称，提它容易被封或引争议",
       "usage": "骨架节奏、提骨架",
       "example": "直播间提骨架一律封禁",
       "source": "233 乐园玩家帖",
