@@ -2,6 +2,15 @@
 
 欢迎补梗。这里只有三条规矩，看完就能提交。
 
+## 30 秒版（最常见：补一个词条）
+
+1. 先 [搜一下词表](skills/speak-like-naruto-mobile-player/references/glossary.md)，确认没收过、也不是某条构式能生成的实例
+2. 同时改 `data/glossary.json` 的 `terms` 和 `references/glossary.md` 的「词表」表，字段填满，拿不准就标 `pending`
+3. 跑 `python3 scripts/lint.py`，通过再提交
+4. PR 里写清楚出处（哪个直播、哪类评论区、哪张截图）
+
+要补的是**规则、场景或词根**，往下看第 1 节判断投到哪一层。
+
 **0.4.0 起数据模型是生成语法**：`data/glossary.json` 里不只有 `terms`，还有 `roots` / `constructions` / `functions` / `pragmatics`。投稿前先判断你要补的是哪一类。
 
 ## 1. 先判断投什么
@@ -50,6 +59,7 @@
 - 为了凑数把同一个词换个写法再收一遍
 - 平台 AI 生成的释义当**一手出处**（页面自标「仅供参考」，只能作旁证）
 - 构式规则能生成的无限词串，逐条塞进 `terms`
+- **0.4.1 已判定移除、0.4.2 起全仓清除的词形** —— 别加回来，`scripts/lint.py` 有黑名单校验，出现即报错。判定逻辑见 [`docs/language-system.md`](docs/language-system.md) 3.1 节
 
 ## 3. 不确定就标 pending
 
@@ -64,7 +74,7 @@
 
 1. Fork 本仓库
 2. 新建分支：`git checkout -b add-term-<词>` 或 `add-construction-<规则>`
-3. 改完本地跑一遍 `python3 scripts/lint.py`，确保通过（五层校验都在里面）
+3. 改完本地跑一遍 `python3 scripts/lint.py`，确保通过（五层同源 + 词形黑名单 + 死链检查都在里面）
 4. 提 PR，标题写 `feat(glossary): 新增 <词>` 或 `feat(construction): 新增 <规则>`
 
 PR 描述里请附上出处，一句"我在某个直播间听过"不够，说说具体场景。拿一手截图 / 逐字转写最有用。
