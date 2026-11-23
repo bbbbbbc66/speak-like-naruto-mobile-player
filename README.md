@@ -19,6 +19,7 @@
 核心不是词库，是**密度控制**——三条回复最多一个梗。塞满梗的回复一眼假，稀疏才像人。
 
 - 完整设计思路：[`docs/design.md`](docs/design.md)
+- 语言系统整理（分层结构 + 置信度清单）：[`docs/language-system.md`](docs/language-system.md)
 - 完整词表：[`skills/speak-like-naruto-mobile-player/references/glossary.md`](skills/speak-like-naruto-mobile-player/references/glossary.md)
 - 验收用例：[`docs/test-cases.md`](docs/test-cases.md)
 
@@ -89,18 +90,20 @@ cp -r speak-like-naruto-mobile-player/skills/speak-like-naruto-mobile-player ~/.
 
 ## 有哪些梗
 
-8 个核心，够用。全量 18 条见 [glossary.md](skills/speak-like-naruto-mobile-player/references/glossary.md)。
+10 个核心，够用。全量 40 条见 [glossary.md](skills/speak-like-naruto-mobile-player/references/glossary.md)。
 
 | 梗 | 意思 | 例句 |
 | --- | --- | --- |
-| 嘉豪 | 装腔作势、用力过猛 | 很嘉豪，豪意值拉满了 |
+| 嘉豪 | 装腔作势、用力过猛；也指忍者帅、能秀 | 很嘉豪，豪意值拉满了 |
 | 串子 | 假装某群体成员，说离谱话引战招黑 | 别串了，一眼串子 |
 | 卡了 | 万能借口，任何失误都说卡了 | 卡了，刚才那波网不好 |
 | 我了猪 / 刚 / 塞 / 雷 | 看海的无意义惊叹词 | 我了猪，这也能赢 |
-| 雷 / 刚（形容词） | 无意义形容词，图个味 | 今天吃了个雷刚饭 |
-| 猪咪（形容词） | 无意义形容词，图个味 | 今天吃了个猪咪饭 |
+| 雷 / 刚 / 猪咪（形容词） | 无意义形容词，图个味 | 今天吃了个雷刚饭 |
 | 断了 | 厉害、牛，夸人用 | 这把断了 |
 | 欧打 / oda | 万能动词 | 先去欧打个饭 |
+| 阴间 / 阳间 | 机制离谱 / 打法正经 | 这忍者太阴间了 |
+| 穿三 | 一个忍者打掉对面三个 | 直接穿三 |
+| 红温 / 破防 / 绷不住 | 急了 / 绷不住了 / 忍不住笑 | 没绷住 |
 
 **注意**：「雷 / 刚 / 猪咪」当形容词时**没有实际含义**。别试图理解它，理解就输了。
 
@@ -123,6 +126,7 @@ speak-like-naruto-mobile-player/
 │       └── glossary.json        梗词表（机器读）
 ├── docs/
 │   ├── design.md                设计决策记录
+│   ├── language-system.md       语言系统整理（分层 + 置信度）
 │   └── test-cases.md            验收用例
 └── scripts/lint.py              本地校验脚本
 ```
@@ -131,9 +135,14 @@ speak-like-naruto-mobile-player/
 
 ## 关于词表
 
-V1 收 18 条，其中 13 条 `verified`、5 条 `pending`。
+0.3.0 收 40 条，其中 27 条 `verified`、13 条 `pending`。
 
-**为什么不一次收几十条**：原始素材里大量词条脱离语境后根本无法还原含义，硬编释义等于往词库里投毒。另外，带具体玩家 / 主播称呼的词一律不收——那是评价人，不是玩梗。
+分层逻辑和每个词的置信度来路，见 [语言系统整理](docs/language-system.md)。简单说：
+
+- **verified**：多个来源能对上，或有明确解释
+- **pending**：只在弹幕、帖子里出现过，没找到明确解释
+
+**为什么 pending 这么多**：不是没收够，是**不敢编**。比如「我了猪 / 刚 / 塞 / 雷」这组，原本是核心梗，但 2026-11-23 的抖音实查里一次都没抓到原词，只有近似句式。所以整组降级成 pending——自己定的规矩，自己先守。
 
 看到 `pending` 的词，说明「听说过但还没人讲清楚」。知道怎么用的，欢迎提 PR。
 

@@ -1,70 +1,88 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "updated": "2026-11-23",
-  "note": "V1 只收录有明确出处和释义的词条。不确定的标 pending，不硬编释义。涉及具体个人的称呼一律不收。",
+  "note": "只收录有出处和释义的词条。不确定的标 pending，不硬编释义。涉及具体个人身份的信息一律不收。「我了猪/刚/塞/雷」因 2026-11-23 实查未获一手语料，降为 pending。",
   "terms": [
     {
       "term": "嘉豪",
       "pinyin": "jia hao",
-      "meaning": "装腔作势、用力过猛，说人明显在端、在演",
-      "usage": "很嘉豪、太嘉豪了、别嘉豪了",
+      "meaning": "装腔作势、用力过猛，又菜又爱装；火影圈也指忍者帅、能秀操作，不完全贬义",
+      "usage": "很嘉豪、太嘉豪了、别嘉豪了、非常嘉豪",
       "example": "很嘉豪，豪意值拉满了",
-      "source": "火影手游玩家圈",
+      "source": "抖音（2024 年视频标签误打扩散，播放超 152 亿）",
       "status": "verified"
     },
     {
       "term": "串子",
       "pinyin": "chuan zi",
-      "meaning": "假装某一群体成员，说离谱话引战招黑",
-      "usage": "别串了、一眼串子、这串子哪来的",
+      "meaning": "假装是某群体成员，说夸张极端的话引战、给对方招黑；现在也带调侃意味",
+      "usage": "别串了、一眼串子、还敢不敢当串子了",
       "example": "别串了，一眼串子",
+      "source": "电竞圈起源，维基百科有定义",
+      "status": "verified"
+    },
+    {
+      "term": "豪意值",
+      "pinyin": "hao yi zhi",
+      "meaning": "把「嘉豪」的装量化成一个数值，借英雄联盟腕豪的设定",
+      "usage": "豪意值拉满、豪意值超标",
+      "example": "豪意值拉满了",
       "source": "火影手游玩家圈",
       "status": "verified"
     },
     {
-      "term": "卡了",
-      "pinyin": "ka le",
-      "meaning": "万能借口，任何失误都能归给网络卡顿",
-      "usage": "卡了、卡了卡了、网卡了",
-      "example": "卡了，刚才那波网不好",
+      "term": "豪到我了",
+      "pinyin": "hao dao wo le",
+      "meaning": "被对方的装腔作势冲击到，半吐槽半服气",
+      "usage": "豪到我了、真豪到我了",
+      "example": "豪到我了兄弟",
       "source": "火影手游玩家圈",
       "status": "verified"
+    },
+    {
+      "term": "雷霆嘉豪",
+      "pinyin": "lei ting jia hao",
+      "meaning": "「嘉豪」的加强说法，雷霆是看海语系的前缀，叠加后表示装到极致",
+      "usage": "雷霆嘉豪、这是雷霆嘉豪",
+      "example": "雷霆嘉豪了属于是",
+      "source": "火影手游玩家圈",
+      "status": "pending"
     },
     {
       "term": "我了猪",
       "pinyin": "wo le zhu",
-      "meaning": "无意义惊叹词，表示惊讶，不带具体含义",
+      "meaning": "看海直播间的无意义惊叹词；本次公开检索未获一手语料，用法待确认",
       "usage": "我了猪、我了猪啊",
       "example": "我了猪，这也能赢",
-      "source": "看海直播间",
-      "status": "verified"
+      "source": "看海直播间（口传）",
+      "status": "pending"
     },
     {
       "term": "我了刚",
       "pinyin": "wo le gang",
-      "meaning": "同「我了猪」，无意义惊叹词，四种说法之一",
+      "meaning": "同「我了猪」，四种惊叹说法之一；同样缺一手语料",
       "usage": "我了刚、我了刚啊",
       "example": "我了刚，这替身术没看清",
-      "source": "看海直播间",
-      "status": "verified"
+      "source": "看海直播间（口传）",
+      "status": "pending"
     },
     {
       "term": "我了塞",
       "pinyin": "wo le sai",
-      "meaning": "同「我了猪」，无意义惊叹词，四种说法之一",
+      "meaning": "同「我了猪」，四种惊叹说法之一；同样缺一手语料",
       "usage": "我了塞、我了塞啊",
       "example": "我了塞，残血反杀",
-      "source": "看海直播间",
-      "status": "verified"
+      "source": "看海直播间（口传）",
+      "status": "pending"
     },
     {
       "term": "我了雷",
       "pinyin": "wo le lei",
-      "meaning": "同「我了猪」，无意义惊叹词，四种说法之一",
+      "meaning": "同「我了猪」，四种惊叹说法之一；同样缺一手语料",
       "usage": "我了雷、我了雷啊",
       "example": "我了雷，这波连招",
-      "source": "看海直播间",
-      "status": "verified"
+      "source": "看海直播间（口传）",
+      "status": "pending"
     },
     {
       "term": "雷（形容词）",
@@ -85,21 +103,39 @@
       "status": "verified"
     },
     {
-      "term": "猪咪",
+      "term": "猪咪（形容词）",
       "pinyin": "zhu mi",
       "meaning": "无意义形容词，纯装饰，和「雷」「刚」同类",
-      "usage": "很猪咪、猪咪饭",
+      "usage": "很猪咪、猪咪思路、猪咪饭",
       "example": "今天吃了个猪咪饭",
       "source": "看海直播间",
       "status": "verified"
     },
     {
+      "term": "猪咪饭",
+      "pinyin": "zhu mi fan",
+      "meaning": "「猪咪」当形容词加名词的玩法，本身没有实际所指",
+      "usage": "吃了个猪咪饭",
+      "example": "今天吃了个猪咪饭",
+      "source": "看海直播间（口传）",
+      "status": "pending"
+    },
+    {
+      "term": "雷刚饭",
+      "pinyin": "lei gang fan",
+      "meaning": "「雷」「刚」叠用加名词，纯图个味道，没有实义",
+      "usage": "吃了个雷刚饭",
+      "example": "今天吃了个雷刚饭",
+      "source": "看海直播间（口传）",
+      "status": "pending"
+    },
+    {
       "term": "断了",
       "pinyin": "duan le",
-      "meaning": "厉害、牛，用来夸人的操作或战绩",
+      "meaning": "厉害、牛，用来夸人的操作或战绩；夸得很轻，不能扩写成尬吹",
       "usage": "断了、这把断了、断了啊",
       "example": "这把断了，残血一打三",
-      "source": "火影手游玩家圈",
+      "source": "看海直播间",
       "status": "verified"
     },
     {
@@ -121,48 +157,210 @@
       "status": "verified"
     },
     {
-      "term": "雷霆嘉豪",
-      "pinyin": "lei ting jia hao",
-      "meaning": "「嘉豪」的加强说法，形容装腔装到极致",
-      "usage": "雷霆嘉豪、这是雷霆嘉豪",
-      "example": "雷霆嘉豪了属于是",
-      "source": "火影手游玩家圈",
-      "status": "pending"
-    },
-    {
-      "term": "豪意值",
-      "pinyin": "hao yi zhi",
-      "meaning": "把「嘉豪」量化成一个数值，说着玩",
-      "usage": "豪意值拉满、豪意值超标",
-      "example": "豪意值拉满了",
-      "source": "火影手游玩家圈",
-      "status": "pending"
-    },
-    {
-      "term": "豪到我了",
-      "pinyin": "hao dao wo le",
-      "meaning": "被对方的装腔作势冲击到，半吐槽半服气",
-      "usage": "豪到我了、真豪到我了",
-      "example": "豪到我了兄弟",
-      "source": "火影手游玩家圈",
-      "status": "pending"
-    },
-    {
-      "term": "猪咪饭",
-      "pinyin": "zhu mi fan",
-      "meaning": "「猪咪」当形容词加名词的玩法，本身没有实际所指",
-      "usage": "吃了个猪咪饭",
-      "example": "今天吃了个猪咪饭",
+      "term": "卡了",
+      "pinyin": "ka le",
+      "meaning": "万能借口，任何失误都能归给网络卡顿，给双方一个台阶",
+      "usage": "卡了、卡了卡了、网卡了",
+      "example": "卡了，刚才那波网不好",
       "source": "看海直播间",
+      "status": "verified"
+    },
+    {
+      "term": "红温",
+      "pinyin": "hong wen",
+      "meaning": "急了、破防了，脸红上头",
+      "usage": "红温了、直接红温、红温成火鸡了",
+      "example": "红温成火鸡了",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "破防",
+      "pinyin": "po fang",
+      "meaning": "被说中了、绷不住了",
+      "usage": "破防了、又破防了",
+      "example": "又破防了？",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "绷不住",
+      "pinyin": "beng bu zhu",
+      "meaning": "忍不住笑了，或者无语了",
+      "usage": "绷不住、没绷住、难绷",
+      "example": "这波操作真的绷不住",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "吓哭了",
+      "pinyin": "xia ku le",
+      "meaning": "夸张说法，效果太秀或太离谱",
+      "usage": "吓哭了、直接吓哭",
+      "example": "串两句飘带就吓哭了",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "带节奏",
+      "pinyin": "dai jie zou",
+      "meaning": "故意挑起话题，引导弹幕往一个方向吵",
+      "usage": "别带节奏、带节奏的",
+      "example": "别带节奏了",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "建议加强",
+      "pinyin": "jian yi jia qiang",
+      "meaning": "反讽，输了就喊加强或削弱，实际是气得想骂策划",
+      "usage": "建议加强、建议削弱",
+      "example": "打不过就开始建议加强了",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "阴间",
+      "pinyin": "yin jian",
+      "meaning": "超标、恶心、机制离谱的忍者或打法",
+      "usage": "很阴间、阴间忍者、阴间撕咬",
+      "example": "这忍者太阴间了",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "阳间",
+      "pinyin": "yang jian",
+      "meaning": "正常、讲道理的忍者或打法，和「阴间」相对",
+      "usage": "很阳间、阳间打法、阳间代言人",
+      "example": "你这把打得很阳间",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "穿三",
+      "pinyin": "chuan san",
+      "meaning": "一穿三，一个忍者打掉对面三个",
+      "usage": "穿三、直接穿三",
+      "example": "这把穿三了",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "反三",
+      "pinyin": "fan san",
+      "meaning": "反手一穿三，被压着打然后翻盘",
+      "usage": "反三、反手反三",
+      "example": "被压着打还能反三",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "撕咬",
+      "pinyin": "si yao",
+      "meaning": "死缠烂打、近身纠缠的打法",
+      "usage": "撕咬打法、撕咬起来",
+      "example": "撕咬打法横行决斗场",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "偷分",
+      "pinyin": "tou fen",
+      "meaning": "用冷门或超标忍者偷偷上分",
+      "usage": "偷分、偷分教学",
+      "example": "出个偷分教学",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "绝活哥",
+      "pinyin": "jue huo ge",
+      "meaning": "只玩一个冷门忍者，还玩得很绝的人",
+      "usage": "绝活哥、又是绝活哥",
+      "example": "又是绝活哥，专精一个忍者",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "权威",
+      "pinyin": "quan wei",
+      "meaning": "顶级理解、说一不二，形容某人对游戏理解极深",
+      "usage": "太权威了、火影还是太权威了、你比主播还有理解",
+      "example": "火影还是太权威了",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "真投入",
+      "pinyin": "zhen tou ru",
+      "meaning": "认真玩、真下功夫；源自策划访谈金句，现在也用作反讽",
+      "usage": "真投入、只有我们才是真投入",
+      "example": "只有我们才是真投入",
+      "source": "策划访谈，后被玩家玩成梗",
+      "status": "verified"
+    },
+    {
+      "term": "信息差",
+      "pinyin": "xin xi cha",
+      "meaning": "对面不了解这个忍者或打法，靠信息不对称赢",
+      "usage": "信息差、打信息差",
+      "example": "靠信息差赢的，不算真本事",
+      "source": "火影手游直播间",
+      "status": "verified"
+    },
+    {
+      "term": "飘带",
+      "pinyin": "piao dai",
+      "meaning": "大概率是「漂泊带土」的简称，直播间提它容易被追着撕咬",
+      "usage": "串了两句飘带、飘带节奏",
+      "example": "串两句飘带就吓哭了",
+      "source": "233 乐园玩家帖",
       "status": "pending"
     },
     {
-      "term": "雷刚饭",
-      "pinyin": "lei gang fan",
-      "meaning": "「雷」「刚」叠用加名词，纯图个味道，没有实义",
-      "usage": "吃了个雷刚饭",
-      "example": "今天吃了个雷刚饭",
-      "source": "看海直播间",
+      "term": "骨架",
+      "pinyin": "gu jia",
+      "meaning": "某忍者或玩法的代称，提它容易被封或被扣帽子",
+      "usage": "骨架节奏、提骨架",
+      "example": "直播间提骨架一律封禁",
+      "source": "233 乐园玩家帖",
+      "status": "pending"
+    },
+    {
+      "term": "扫码",
+      "pinyin": "sao ma",
+      "meaning": "形容某忍者玩法恶心、无脑，像扫码一样不用想",
+      "usage": "扫码忍者、太扫码了",
+      "example": "这忍者纯扫码",
+      "source": "抖音评论区",
+      "status": "pending"
+    },
+    {
+      "term": "暗部",
+      "pinyin": "an bu",
+      "meaning": "高手对局，或暗地里进行的对局",
+      "usage": "暗部局、打暗部",
+      "example": "你是个暗部来了都可能吃超影",
+      "source": "火影手游直播间（口传）",
+      "status": "pending"
+    },
+    {
+      "term": "团藏（帽子义）",
+      "pinyin": "tuan zang",
+      "meaning": "扣帽子式的标签，用来指认「带节奏的人」，具体语境待核",
+      "usage": "扣团藏帽子、被扣上团藏帽子",
+      "example": "给一起带节奏的扣上团藏帽子",
+      "source": "233 乐园玩家帖",
+      "status": "pending"
+    },
+    {
+      "term": "动物园",
+      "pinyin": "dong wu yuan",
+      "meaning": "某一批熟人主播的圈子，具体范围说法不一",
+      "usage": "动物园那帮人、动物园这些熟人",
+      "example": "动物园这些熟人在一起是真有效果",
+      "source": "抖音评论区",
       "status": "pending"
     }
   ]
