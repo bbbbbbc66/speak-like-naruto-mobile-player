@@ -34,7 +34,7 @@
 ### 1. 克隆
 
 ```bash
-git clone https://github.com/18006608230/speak-like-naruto-mobile-player.git
+git clone https://github.com/bbbbbbc66/speak-like-naruto-mobile-player.git
 ```
 
 ### 2. 建 skills 目录（已有就跳过）
