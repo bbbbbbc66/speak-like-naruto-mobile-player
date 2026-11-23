@@ -19,5 +19,5 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: 校验 frontmatter / 梗词表一致性 / 死链
+      - name: 校验 frontmatter / 五层结构同源 / 引用完整性 / 死链
         run: python3 scripts/lint.py
